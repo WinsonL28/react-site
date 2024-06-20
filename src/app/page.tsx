@@ -1,8 +1,16 @@
+import React from 'react'
 import Image from "next/image";
+import CNavBar from "../Components/navbar"
+
+
+
 
 export default function Home() {
   return (
+
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <CNavBar />
+
       <nav>
 
       </nav>
@@ -18,9 +26,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By Western Pacfic <br/> &nbsp; Robotics Academy
-            <img className="w-[30px] "
-            src="/Updated_logo.png" alt="" />
+            By Western Pacfic <br /> &nbsp; Robotics Academy
+            <img className="w-[20px]"
+              src="/Updated_logo.png" alt="" />
           </a>
         </div>
       </div>
@@ -29,7 +37,7 @@ export default function Home() {
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/next.svg"
-          alt="Next.js Logo"
+          alt=""
           width={180}
           height={37}
           priority
